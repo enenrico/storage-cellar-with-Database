@@ -1,19 +1,17 @@
-from kivy.app import App
+from kivy.app import App        #Import lib
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.uix.stacklayout import StackLayout
-from kivy.uix.button import Button
-from kivy.properties import StringProperty
 
-class MainScreen(Screen):
+
+class MainScreen(Screen):   #create a screen for the main menue
     pass
-class AddScreen(Screen):
+class AddScreen(Screen):    #create a screen for a new screen
     pass
-class AddFood(Screen):
+class AddFood(Screen):      #create a screen to add food
     pass
-class DeleteFood(Screen):
+class DeleteFood(Screen):   #create a Screen to delete foof
     pass
-class Admin(Screen):
+class Admin(Screen):        ##create a Screen for the admin
      pass
 
 
@@ -24,10 +22,10 @@ class WindowManager(ScreenManager):
 kv =  Builder.load_file("screen_main.kv")
 
 class MyApp(App):
-#    abcd = StringProperty('test')
+
     def build(self):
 
         return kv
 
-if __name__ == '__main__':
+if __name__ == '__main__':  #build 
     MyApp().run()
