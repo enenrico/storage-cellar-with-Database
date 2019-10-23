@@ -41,7 +41,7 @@ WindowManager:
         size: 50,50
         pos: 100,100
       Button:
-        text: "Tütten"
+        text: "back"
         size:50,50
         pos: 50,50
         on_release:
@@ -61,12 +61,14 @@ WindowManager:
   StackLayout:
     Button:
       text:"eins"
+      on_release:
+        app.root.current ="MainScreen_name"
     Button:
       text: "zwei"
 
 
 <AddScreen>:
- 
+
   name: "AddScreen_name"
   Button:
     text:"go back"
