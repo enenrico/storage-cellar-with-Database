@@ -2,4 +2,4 @@
 A Database to sort your storage cellar
 
 
-#at the moment I create the finctions an later the appearance
+#at the moment I create the functions an later the appearance
